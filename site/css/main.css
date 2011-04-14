@@ -97,6 +97,11 @@ header #signout:active {
 }
 
 /* line 84, ../src/main.scss */
+input#addtasktextfield.inactive {
+  color: #CCC;
+}
+
+/* line 88, ../src/main.scss */
 input#addtasktextfield {
   border: 1px solid #C4C4C4;
   height: 40px;
@@ -105,11 +110,11 @@ input#addtasktextfield {
   font-size: 16px;
   font-weight: bold;
   padding-left: 10px;
-  color: #CCC;
+  color: #333;
   width: 420px;
 }
 
-/* line 96, ../src/main.scss */
+/* line 100, ../src/main.scss */
 #addtaskbutton {
   background: url("/img/addtaskbuttonbackground.jpg");
   border: 1px solid #2f53cd;
@@ -129,19 +134,19 @@ input#addtasktextfield {
   font-weight: bold;
 }
 
-/* line 109, ../src/main.scss */
+/* line 113, ../src/main.scss */
 #addtaskbutton:hover {
   background: url("/img/addtaskbuttonhoverbackground.jpg");
   cursor: pointer;
 }
 
-/* line 113, ../src/main.scss */
+/* line 117, ../src/main.scss */
 #addtaskbutton:active {
   background: url("/img/addtaskbuttonpushedbackground.jpg");
   cursor: pointer;
 }
 
-/* line 118, ../src/main.scss */
+/* line 122, ../src/main.scss */
 .item {
   font-size: 14px;
   border-top: 1px solid #EEE;
@@ -150,25 +155,25 @@ input#addtasktextfield {
   padding-left: 20px;
 }
 
-/* line 125, ../src/main.scss */
+/* line 129, ../src/main.scss */
 .item.first {
   border-top: 1px solid #DDD;
 }
 
-/* line 128, ../src/main.scss */
+/* line 132, ../src/main.scss */
 .item label {
   margin-left: 10px;
   padding-left: 0;
 }
 
-/* line 129, ../src/main.scss */
+/* line 133, ../src/main.scss */
 .item.done {
   opacity: 0.2;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
 }
 
-/* line 132, ../src/main.scss */
+/* line 136, ../src/main.scss */
 #webpageinfo {
   font-size: 10px;
   color: #CCC;

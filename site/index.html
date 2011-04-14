@@ -32,7 +32,6 @@
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.7.min.js"></script>
-  <script src="js/todo.js"></script>
 
 </head>
 
@@ -47,7 +46,7 @@
           <h1>My todo list for today</h1>
           <div id="mainblock">
               <div id="task">
-                  <input id="addtasktextfield" name="addtasktextfield" type="text" value="Add a task..."></input>
+                  <input id="addtasktextfield" name="addtasktextfield" type="text" value="Add a task..." class="inactive"></input>
                   <input type="button" id="addtaskbutton" name="addtaskbutton" value="Add Task"></input>
               </div>
               <div id="todolist">
@@ -96,7 +95,7 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/todo.js"></script>
   <!-- end scripts-->
 
 

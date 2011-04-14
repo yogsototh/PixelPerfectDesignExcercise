@@ -81,6 +81,10 @@ header #signout:active {
     background-image: url('/img/addtaskbackground.jpg');
 }
 
+input#addtasktextfield.inactive {
+    color: #CCC;
+}
+
 input#addtasktextfield {
     border: 1px solid #C4C4C4;
     height: 40px;
@@ -89,7 +93,7 @@ input#addtasktextfield {
     font-size: 16px;
     font-weight: bold;
     padding-left: 10px;
-    color: #CCC;
+    color: #333;
     width: 420px;
 }
 
