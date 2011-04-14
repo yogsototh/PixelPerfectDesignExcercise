@@ -1,4 +1,5 @@
 @import "compass/css3/border-radius";
+@import "compass/css3/opacity";
 
 body {
     background: #f6f6f6;
@@ -21,27 +22,28 @@ header {
 }
 
 header #title {
-    width: 640px;
-    margin: 0 auto;
+    margin-left: 10px;
     background-image: url('/img/logo.jpg');
     background-repeat: no-repeat;
-    padding-left: 25px;
+    padding-left: 30px;
     color: #333;
-    text-shadow: 1px 1px #666;
+    font-size: 20px;
+    text-shadow: 1px 1px #555, -1px -1px #111;
     line-height: 42px;
-    font-weight: bold;
+    font-weight: normal;
     height: 50px;
 }
-#main {
+#main, footer {
     width: 640px;
     margin: 80px auto;
 }
 #main h1 {
     text-align: center;
     font-size: 32px;
+    // font-weight: 500;
     color: #696969;
-    text-shadow:  -1px -1px #525252;
-    letter-spacing: -.2px;
+    // text-shadow:  -1px -1px #525252;
+    letter-spacing: -.3px;
     margin-bottom: 30px;
 }
 
@@ -84,4 +86,22 @@ input#addtasktextfield {
 }
 #addtaskbutton:active {
     background: url('/img/addtaskbuttonpushedbackground.jpg');
+}
+
+.item {
+    border-top: 1px solid #EEE;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.item.first {
+    border-top: 1px solid #DDD;
+}
+.item label { margin-left: 10px; padding-left: 0;}
+.item.done {
+    @include opacity(.2);
+}
+#webpageinfo {
+    font-size: 10px;
+    color: #CCC;
 }
