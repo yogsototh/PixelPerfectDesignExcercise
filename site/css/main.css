@@ -159,7 +159,7 @@ input#addtasktextfield {
 }
 
 /* line 132, ../src/main.scss */
-.item.first {
+.item:first-child {
   border-top: 1px solid #DDD;
 }
 

@@ -129,7 +129,7 @@ input#addtasktextfield {
     line-height: 39px;
     padding-left: 20px;
 }
-.item.first {
+.item:first-child {
     border-top: 1px solid #DDD;
 }
 .item label { margin-left: 10px; padding-left: 0;}
