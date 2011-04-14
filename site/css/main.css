@@ -116,6 +116,7 @@ input#addtasktextfield {
 
 /* line 100, ../src/main.scss */
 #addtaskbutton {
+  background-color: #1782ff;
   background: url("/img/addtaskbuttonbackground.jpg");
   border: 1px solid #2f53cd;
   font-size: 16px;
@@ -134,19 +135,21 @@ input#addtasktextfield {
   font-weight: bold;
 }
 
-/* line 113, ../src/main.scss */
+/* line 114, ../src/main.scss */
 #addtaskbutton:hover {
+  background-color: #0b92ff;
   background: url("/img/addtaskbuttonhoverbackground.jpg");
   cursor: pointer;
 }
 
-/* line 117, ../src/main.scss */
+/* line 119, ../src/main.scss */
 #addtaskbutton:active {
+  background-color: #306dff;
   background: url("/img/addtaskbuttonpushedbackground.jpg");
   cursor: pointer;
 }
 
-/* line 122, ../src/main.scss */
+/* line 125, ../src/main.scss */
 .item {
   font-size: 14px;
   border-top: 1px solid #EEE;
@@ -155,25 +158,25 @@ input#addtasktextfield {
   padding-left: 20px;
 }
 
-/* line 129, ../src/main.scss */
+/* line 132, ../src/main.scss */
 .item.first {
   border-top: 1px solid #DDD;
 }
 
-/* line 132, ../src/main.scss */
+/* line 135, ../src/main.scss */
 .item label {
   margin-left: 10px;
   padding-left: 0;
 }
 
-/* line 133, ../src/main.scss */
+/* line 136, ../src/main.scss */
 .item.done {
   opacity: 0.2;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
 }
 
-/* line 136, ../src/main.scss */
+/* line 139, ../src/main.scss */
 #webpageinfo {
   font-size: 10px;
   color: #CCC;

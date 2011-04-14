@@ -98,6 +98,7 @@ input#addtasktextfield {
 }
 
 #addtaskbutton {
+    background-color: #1782ff;
     background: url('/img/addtaskbuttonbackground.jpg');
     border: 1px solid #2f53cd;
     font-size: 16px;
@@ -111,10 +112,12 @@ input#addtasktextfield {
     font-weight: bold;
 }
 #addtaskbutton:hover {
+    background-color: #0b92ff;
     background: url('/img/addtaskbuttonhoverbackground.jpg');
     cursor: pointer;
 }
 #addtaskbutton:active {
+    background-color: #306dff;
     background: url('/img/addtaskbuttonpushedbackground.jpg');
     cursor: pointer;
 }
