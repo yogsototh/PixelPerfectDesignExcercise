@@ -65,23 +65,20 @@ MainController.prototype.addTodo = function(text, id) {
 
 MainController.prototype.finished = function(item_id) {
     var self=this;
-    log(self.todolist);
-    log(item_id);
-    log('loop');
     $.each( self.todolist.undone, function (i,v) {
-                log(v['id'])
                 if (v['id'] == item_id) {
                     element=v;
                     self.todolist.undone.splice(i,1);
-                    self.todolist.done += v;
+                    self.todolist.done.push(v);
+                    return false;
                 }
             });
-    $('.item').remove();
-    self.initialization();
+    mainController.initialization();
 }
 
 MainController.prototype.initialization = function() {
     var self=this;
+    $('.item').remove();
     $.each( self.todolist.done.reverse(), function(i,v) {
             self.addDone(v['text'], v['id']);
     });
@@ -91,6 +88,17 @@ MainController.prototype.initialization = function() {
     });
     self.todolist.undone.reverse();
 }
+MainController.prototype.addTask = function(text) {
+    var self=this;
+    self.todolist.undone.push(
+            {id: self.todolist.nextId, text: text}
+            );
+    self.todolist.nextId += 1;
+    self.initialization();
+}
+MainController.prototype.addSomeTask = function() {
+    this.addTask( $('#addtasktextfield').val() );
+}
 
 var mainController = new MainController();
 
@@ -98,4 +106,11 @@ var mainController = new MainController();
 $(document).ready( function() {
     autoclear('addtasktextfield','Add a task...');
     mainController.initialization();
+    $('#addtaskbutton').click( function(){mainController.addSomeTask()} );
+    $('#addtasktextfield').keypress( function(k){
+        if (k.which == 13) {
+            mainController.addSomeTask();
+            $('#addtasktextfield').val('');
+        }
+    } );
 });
