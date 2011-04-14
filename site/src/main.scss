@@ -33,6 +33,29 @@ header #title {
     font-weight: normal;
     height: 50px;
 }
+header #signout {
+    background-image: url('/img/signoutbutton.jpg');
+    float: right;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    color: #CCC;
+    font-size: 14px;
+    text-shadow: 1px 1px #555, -1px -1px #111;
+    line-height: 42px;
+    font-weight: bold;
+    height: 50px;
+}
+header #signout:hover {
+    background-image: url('/img/signouthoverbutton.jpg');
+    cursor: pointer;
+}
+header #signout:active {
+    background-image: url('/img/signoutpushedbutton.jpg');
+    cursor: pointer;
+}
 #main, footer {
     width: 640px;
     margin: 80px auto;
@@ -60,8 +83,9 @@ header #title {
 
 input#addtasktextfield {
     border: 1px solid #C4C4C4;
-    height: 38px;
+    height: 40px;
     background: url('/img/addtasktextfieldbackground.jpg');
+    background-repeat: repeat-x;
     font-size: 16px;
     font-weight: bold;
     padding-left: 10px;
@@ -72,10 +96,11 @@ input#addtasktextfield {
 #addtaskbutton {
     background: url('/img/addtaskbuttonbackground.jpg');
     border: 1px solid #2f53cd;
+    font-size: 16px;
     @include border-radius(5px, 5px);
     color: #FFF;
     text-shadow: -1px -1px #2f53cd, 1px 1px #73aaff;
-    height: 40px;
+    height: 42px;
     margin-left: 20px;
     width: 120px;
     text-align: center;
@@ -83,15 +108,18 @@ input#addtasktextfield {
 }
 #addtaskbutton:hover {
     background: url('/img/addtaskbuttonhoverbackground.jpg');
+    cursor: pointer;
 }
 #addtaskbutton:active {
     background: url('/img/addtaskbuttonpushedbackground.jpg');
+    cursor: pointer;
 }
 
 .item {
+    font-size: 14px;
     border-top: 1px solid #EEE;
-    height: 40px;
-    line-height: 40px;
+    height: 39px;
+    line-height: 39px;
     padding-left: 20px;
 }
 .item.first {
