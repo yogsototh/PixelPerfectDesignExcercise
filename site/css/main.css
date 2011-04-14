@@ -1,0 +1,110 @@
+/* line 3, ../src/main.scss */
+body {
+  background: #f6f6f6;
+  background-image: url("/img/mainbackground.jpg");
+  font-family: Helvetica;
+}
+
+/* line 9, ../src/main.scss */
+header {
+  background-image: url("/img/topbar.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  color: #f00;
+  line-height: 42px;
+  font-weight: bold;
+  height: 50px;
+}
+
+/* line 23, ../src/main.scss */
+header #title {
+  width: 640px;
+  margin: 0 auto;
+  background-image: url("/img/logo.jpg");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  color: #333;
+  text-shadow: 1px 1px #666;
+  line-height: 42px;
+  font-weight: bold;
+  height: 50px;
+}
+
+/* line 35, ../src/main.scss */
+#main {
+  width: 640px;
+  margin: 80px auto;
+}
+
+/* line 39, ../src/main.scss */
+#main h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #696969;
+  text-shadow: -1px -1px #525252;
+  letter-spacing: -0.2px;
+  margin-bottom: 30px;
+}
+
+/* line 48, ../src/main.scss */
+#mainblock {
+  border: solid 5px #CCC;
+  -webkit-border-radius: 8px 8px;
+  -moz-border-radius: 8px / 8px;
+  -o-border-radius: 8px / 8px;
+  -ms-border-radius: 8px / 8px;
+  -khtml-border-radius: 8px / 8px;
+  border-radius: 8px / 8px;
+}
+
+/* line 53, ../src/main.scss */
+#task {
+  padding: 20px;
+  background: #ededed;
+  background-image: url("/img/addtaskbackground.jpg");
+}
+
+/* line 59, ../src/main.scss */
+input#addtasktextfield {
+  border: 1px solid #C4C4C4;
+  height: 38px;
+  background: url("/img/addtasktextfieldbackground.jpg");
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: #CCC;
+  width: 420px;
+}
+
+/* line 70, ../src/main.scss */
+#addtaskbutton {
+  background: url("/img/addtaskbuttonbackground.jpg");
+  border: 1px solid #2f53cd;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  -o-border-radius: 5px / 5px;
+  -ms-border-radius: 5px / 5px;
+  -khtml-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  color: #FFF;
+  text-shadow: -1px -1px #2f53cd, 1px 1px #73aaff;
+  height: 40px;
+  margin-left: 20px;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 82, ../src/main.scss */
+#addtaskbutton:hover {
+  background: url("/img/addtaskbuttonhoverbackground.jpg");
+}
+
+/* line 85, ../src/main.scss */
+#addtaskbutton:active {
+  background: url("/img/addtaskbuttonpushedbackground.jpg");
+}
