@@ -97,6 +97,9 @@ MainController.prototype.addTask = function(text) {
     self.initialization();
 }
 MainController.prototype.addSomeTask = function() {
+    if ($('#addtasktextfield').val() == 'Add a task...') {
+        return false;
+    }
     this.addTask( $('#addtasktextfield').val() );
 }
 
